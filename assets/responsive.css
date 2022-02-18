@@ -1,0 +1,90 @@
+@media screen and (max-width: 800px) {
+  html,
+  body {
+    width: 100%;
+  }
+  header {
+    display: none;
+  }
+
+  figure img {
+    width: 40vw;
+    margin: 50px auto;
+  }
+
+  .container {
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+  }
+  .intro-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  article > h1 > a > span {
+    color: var(--orange);
+    font-family: "Roboto Mono", monospace;
+    font-size: large;
+    font-weight: 400;
+  }
+  article > h1 {
+    text-align: center;
+  }
+  article > p {
+    max-width: none;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-align: center;
+  }
+  header {
+    padding: 5px auto;
+    height: 50px;
+  }
+
+  #tool-section {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100vw;
+    height: max-content;
+    min-height: 400px;
+  }
+  #tool-section h1 {
+    width: auto;
+  }
+  .list-tool {
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 15px;
+    width: 300px;
+  }
+
+  .list-tool li {
+    width: auto;
+  }
+  .list-tool li img {
+    width: 50px;
+  }
+  #my-project {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  #my-project ul {
+    flex-direction: column;
+  }
+  #collaborate {
+    padding-top: 0px;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  aside {
+    padding: 0;
+    border-left: none;
+  }
+  aside h1 {
+    text-align: left;
+    margin: inherit;
+  }
+}

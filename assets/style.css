@@ -1,0 +1,255 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffeaea;
+  --orange: #ffe44a;
+}
+p,
+h1,
+h2,
+a {
+  color: var(--black);
+  font-family: "Lato", monospace;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--black);
+  font-family: "Lato", monospace;
+}
+
+li {
+  list-style-type: none;
+}
+.container {
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 1000px;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  background-color: var(--black);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  height: 70px;
+  padding: 10px auto;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav li {
+  list-style-type: none;
+}
+.nav a:hover {
+  background-color: var(--orange);
+  color: var(--black);
+}
+.nav a {
+  font-family: "Lato", monospace;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: var(--white);
+  padding: 10px 20px;
+  margin: auto 5px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.main {
+  width: 100vw;
+}
+
+article > h1 > a > span {
+  color: var(--orange);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+#intro {
+  background-color: var(--black);
+  overflow: hidden;
+}
+.intro-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+figure img {
+  border-radius: 50%;
+  margin-right: 100px;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  box-shadow: 0px 0px 13px 4px var(--orange);
+  -webkit-box-shadow: 0px 0px 13px 4px var(--orange);
+  -moz-box-shadow: 0px 0px 13px 4px var(--orange);
+}
+
+figure img:hover {
+  z-index: 1;
+  transform: scale(1.05);
+}
+
+.intro article {
+  max-width: 100%;
+}
+article > p {
+  margin-top: 20px;
+  line-height: 30px;
+  color: var(--white);
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* TOOL SECTION */
+
+#tool-section {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: #1c1c31;
+}
+#tool-section h1 {
+  background-color: var(--orange);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 30%;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#tool-section p {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--white);
+
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+.list-tool {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 600px;
+  gap: 20px 60px;
+}
+.list-tool li {
+  flex-direction: column;
+}
+.list-tool > li > img {
+  width: 70px;
+}
+
+/* MY PROJECT */
+
+#my-project {
+  padding-top: 100px;
+  aspect-ratio: 5/1;
+  width: 100%;
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/assets/blob-scene.svg);
+}
+
+#my-project ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+#my-project h1 {
+  width: fit-content;
+  padding-bottom: 5px;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+#my-project li {
+  width: fit-content;
+  padding: 6px;
+  padding-right: 20px;
+
+  border-radius: 25px;
+  /* border: 2px solid black; */
+}
+#my-project li span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-right: 7px;
+}
+#my-project a {
+  display: block;
+  max-width: fit-content;
+  margin: 5px;
+}
+/* Collaborate */
+
+#collaborate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#collaborate h1 {
+  margin-bottom: 20px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex ul {
+  display: flex;
+  align-items: center;
+  gap: 20px 10px;
+}
+
+.icon-social-media {
+  width: 25px;
+}
+aside {
+  padding: 40px;
+  border-left: 3px solid #b9b9b9;
+}
+aside h1 {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 24px;
+}
+/* footer */
+
+footer {
+  background-color: var(--orange);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+footer p {
+  text-align: center;
+}

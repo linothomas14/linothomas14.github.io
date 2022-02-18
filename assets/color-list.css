@@ -1,0 +1,63 @@
+:root {
+  --blue: #209ddc;
+  --yellow: #dadb27;
+  --green: #8ac33e;
+  --pink: #ca2260;
+}
+
+.blue {
+  background-color: var(--blue);
+}
+.border-blue {
+  border: 2px solid var(--blue);
+  transition: 0.2s;
+}
+.border-blue:hover {
+  background-color: var(--blue);
+  color: white;
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.border-yellow {
+  border: 2px solid var(--yellow);
+  transition: 0.2s;
+}
+.border-yellow:hover {
+  background-color: var(--yellow);
+  color: white;
+}
+.green {
+  background-color: var(--green);
+}
+.border-green {
+  border: 2px solid var(--green);
+  transition: 0.2s;
+}
+.border-green:hover {
+  background-color: var(--green);
+  color: white;
+}
+.pink {
+  background-color: var(--pink);
+}
+.border-pink {
+  border: 2px solid var(--pink);
+  transition: 0.2s;
+}
+.border-pink:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+.black {
+  background-color: var(--black);
+}
+.border-black {
+  border: 2px solid var(--black);
+  transition: 0.2s;
+}
+.border-black:hover {
+  background-color: var(--black);
+  color: white;
+}
