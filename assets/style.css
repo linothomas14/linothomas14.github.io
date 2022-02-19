@@ -48,7 +48,10 @@ header {
   height: 70px;
   padding: 10px auto;
 }
-
+header h1 {
+  margin: 0 100px;
+  color: #ffeaea;
+}
 .nav {
   display: flex;
 }
@@ -235,11 +238,20 @@ article > p {
   width: 25px;
 }
 aside {
-  padding: 40px;
+  padding-left: 40px;
+  max-width: fit-content;
   border-left: 3px solid #b9b9b9;
 }
+
+aside img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
 aside h1 {
-  width: fit-content;
+  max-width: fit-content;
   margin: 0 auto;
   font-size: 24px;
 }

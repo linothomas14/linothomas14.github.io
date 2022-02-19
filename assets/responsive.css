@@ -84,7 +84,7 @@
     border-left: none;
   }
   aside h1 {
+    margin: 0 auto;
     text-align: left;
-    margin: inherit;
   }
 }
