@@ -52,18 +52,18 @@ header h1 {
   margin: 0 100px;
   color: #ffeaea;
 }
-.nav {
+nav ul {
   display: flex;
 }
 
-.nav li {
+nav li {
   list-style-type: none;
 }
-.nav a:hover {
+nav a:hover {
   background-color: var(--orange);
   color: var(--black);
 }
-.nav a {
+nav a {
   font-family: "Lato", monospace;
   font-size: 1em;
   letter-spacing: 1px;
@@ -72,6 +72,7 @@ header h1 {
   margin: auto 5px;
   border-radius: 20px;
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .main {
@@ -159,7 +160,7 @@ article > p {
   align-items: baseline;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 600px;
+  max-width: 600px;
   gap: 20px 60px;
 }
 .list-tool li {
